@@ -1,6 +1,6 @@
 {
   "name": "code42day-ua",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Google Universal Analytics tracking snippet",
   "scripts": {
     "test": "make check"

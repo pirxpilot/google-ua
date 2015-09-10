@@ -2,12 +2,14 @@
   "name": "ua",
   "repo": "code42day/ua",
   "description": "Google Universal Analytics tracking snippet",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "keywords": [
-    "google", "analytics", "universal"
+    "google",
+    "analytics",
+    "universal"
   ],
   "dependencies": {
-  	"code42day/dataset": "0.3.0",
+    "code42day/dataset": "0.3.0",
     "code42day/load": "1.0.0"
   },
   "license": "MIT",
