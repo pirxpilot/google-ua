@@ -1,0 +1,30 @@
+{
+  "name": "code42day-ua",
+  "version": "1.1.0",
+  "description": "Google Universal Analytics tracking snippet",
+  "scripts": {
+    "test": "make check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code42day/ua.git"
+  },
+  "keywords": [
+    "browser",
+    "google",
+    "analytics",
+    "universal"
+  ],
+  "author": "Damian Krzeminski <pirxpilot@code42day.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/code42day/ua/issues"
+  },
+  "dependencies": {
+    "code42day-load": "^1.0.1",
+    "dataset": "^0.3.1"
+  },
+  "browser": {
+    "load": "code42day-load"
+  }
+}
