@@ -3,7 +3,7 @@ var load = require('load');
 
 module.exports = analytics;
 
-function analytics(propertyId) {
+function analytics(propertyId, fields) {
   if (!propertyId) {
     propertyId = dataset(document.body, 'gaPropertyId');
     if (!propertyId) {
@@ -21,6 +21,13 @@ function analytics(propertyId) {
   window.ga.l = 1 * new Date();
 
   ga('create', propertyId);
+
+  if (fields) {
+    Object.keys(fields).forEach(function(name) {
+      ga('set', name, fields[name]);
+    });
+  }
+
   ga('send', 'pageview');
 
   return load('//www.google-analytics.com/analytics.js');
