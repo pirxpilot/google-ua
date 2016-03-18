@@ -1,4 +1,9 @@
 
+1.2.0 / 2016-03-18
+==================
+
+ * add support for setting general tracker fields before pageview is sent
+
 1.1.1 / 2015-09-09
 ==================
 
