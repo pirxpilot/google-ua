@@ -33,6 +33,24 @@ require('code42day-ua')("UA-XXXX-X", {
   forceSSL: true,
   userId: 'as8eknlll'
 });
+
+// set fields, retrieve property ID from data attribute of document body
+require('code42day-ua')({
+  anonymizeIP: true,
+  forceSSL: true,
+  userId: 'as8eknlll'
+});
+
+```
+
+  You can prevent snippet from sending `pageview` event automatically by setting the first parameter to false
+```javascript
+// initilize tracker, do not send `pageview` event
+require('code42day-ua')(false, "UA-XXXX-X")
+
+// initialize tracker, do not send `pageview` event, retrieve property ID from data attribute of document body
+require('code42day-ua')(false);
+
 ```
 
 ## License

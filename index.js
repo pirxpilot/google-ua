@@ -3,7 +3,21 @@ var load = require('load');
 
 module.exports = analytics;
 
-function analytics(propertyId, fields) {
+function analytics(pageview, propertyId, fields) {
+  // shift params if pageview is not defined
+  if (typeof pageview !== 'boolean') {
+    fields = propertyId;
+    propertyId = pageview;
+    pageview = true;
+  }
+
+  // shif params if propertyId is not defined
+  if (typeof propertyId !== 'string') {
+    fields = propertyId;
+    propertyId = undefined;
+  }
+
+  // if propertyId is not defined try find it in data-ga-property-id
   if (!propertyId) {
     propertyId = dataset(document.body, 'gaPropertyId');
     if (!propertyId) {
@@ -28,7 +42,9 @@ function analytics(propertyId, fields) {
     });
   }
 
-  ga('send', 'pageview');
+  if (pageview) {
+    ga('send', 'pageview');
+  }
 
   return load('//www.google-analytics.com/analytics.js');
 }
