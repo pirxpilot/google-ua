@@ -35,6 +35,7 @@ function analytics(pageview, propertyId, fields) {
   window.ga.l = 1 * new Date();
 
   ga('create', propertyId);
+  ga('set', 'transport', 'beacon');
 
   if (fields) {
     Object.keys(fields).forEach(function(name) {
