@@ -1,8 +1,13 @@
 
+1.4.0 / 2017-02-17
+==================
+
+ * use beacon transport when available
+
 1.3.1 / 2017-02-16
 ==================
 
- * change name to google-ga
+ * change name to google-ua
 
 1.3.0 / 2016-03-29
 ==================
