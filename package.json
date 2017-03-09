@@ -18,10 +18,10 @@
   "author": "Damian Krzeminski <pirxpilot@furkot.com>",
   "license": "MIT",
   "dependencies": {
-    "code42day-load": "^1.0.1",
-    "dataset": "^0.3.1"
+    "dataset": "^0.3.1",
+    "dynload": "^1.0.2"
   },
   "browser": {
-    "load": "code42day-load"
+    "load": "dynload"
   }
 }
