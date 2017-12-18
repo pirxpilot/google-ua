@@ -46,5 +46,5 @@ function analytics(pageview, propertyId, fields) {
     ga('send', 'pageview');
   }
 
-  return load('//www.google-analytics.com/analytics.js');
+  return load('https://www.google-analytics.com/analytics.js');
 }
