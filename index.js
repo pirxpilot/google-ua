@@ -1,4 +1,3 @@
-var dataset = require('dataset');
 var load = require('load');
 
 module.exports = analytics;
@@ -19,7 +18,7 @@ function analytics(pageview, propertyId, fields) {
 
   // if propertyId is not defined try find it in data-ga-property-id
   if (!propertyId) {
-    propertyId = dataset(document.body, 'gaPropertyId');
+    propertyId = document.body.dataset.gaPropertyId;
     if (!propertyId) {
       return;
     }
