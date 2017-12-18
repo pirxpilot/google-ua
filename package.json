@@ -1,6 +1,6 @@
 {
   "name": "google-ua",
-  "version": "1.4.1",
+  "version": "2.0.0",
   "description": "Google Universal Analytics tracking snippet",
   "scripts": {
     "test": "make check"

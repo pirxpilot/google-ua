@@ -1,4 +1,10 @@
 
+2.0.0 / 2017-12-17
+==================
+
+ * always load analytics script using https
+ * remove dependency on dataset
+
 1.4.1 / 2017-03-09
 ==================
 
